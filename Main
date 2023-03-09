@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-bool find_sum_of_two(vector<int>& A, int val,
+bool find_sum_of_two(std::vector<int>& A, int val,
   size_t start_index) {
   for (int i = start_index, j = A.size() - 1; i < j;) {
     int sum = A[i] + A[j];
@@ -29,7 +29,7 @@ for (int i = 0; i < arr.size() - 2; ++i) {
 return false;
 }
 int main(){
-    vector<int> arr = {-25, -10, -7, -3, 2, 4, 8, 10};
+    std::vector<int> arr = {-25, -10, -7, -3, 2, 4, 8, 10};
   
     std::cout<<"-8: " <<find_sum_of_three_v3(arr, -8)<<std::endl; 
     std::cout<<"-25: "<<find_sum_of_three_v3(arr, -25)<<std::endl;
